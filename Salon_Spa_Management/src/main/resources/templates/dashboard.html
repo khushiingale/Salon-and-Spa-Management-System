@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Available Services</h2>
+    <ul id="servicesList"></ul>
+
+    <h2>My Bookings</h2>
+    <ul id="pastBookings"></ul>
+
+ <!--    <script>
+        async function fetchServices() {
+            const response = await fetch("http://localhost:8080/api/services");
+            const services = await response.json();
+            const list = document.getElementById("servicesList");
+            services.forEach(service => {
+                const li = document.createElement("li");
+                li.textContent = `${service.name} - ${service.price}`;
+                list.appendChild(li);
+            });
+        }
+
+        async function fetchBookings() {
+            const response = await fetch("http://localhost:8080/api/bookings/user/1");
+            const bookings = await response.json();
+            const list = document.getElementById("pastBookings");
+            bookings.forEach(booking => {
+                const li = document.createElement("li");
+                li.textContent = `${booking.service.name} on ${booking.date} at ${booking.time}`;
+                list.appendChild(li);
+            });
+        }
+
+        fetchServices();
+        fetchBookings(); -->
+    </script>
+</body>
+</html>

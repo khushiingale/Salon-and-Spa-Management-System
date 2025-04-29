@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Salon Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #f8f8f8;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 10px;
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Salon Management System</h1>
+    
+    <div class="container">
+        <p>Manage salon bookings, appointments, and services efficiently.</p>
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/signup}">Sign Up</a>
+    </div>
+
+</body>
+</html>
